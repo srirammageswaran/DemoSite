@@ -224,7 +224,7 @@
                     <configuration>
                         <!-- Useful when deploying to Tomcat elsewhere on the system -->
                         <update>true</update>
-                        <url>http://127.0.0.1:8080/manager/text</url>
+                        <url>http://127.0.0.1:80/manager/text</url>
                         <username>tomcatscript</username>
                         <password>secret</password>
                         <additionalConfigFilesDir>${project.build.directory}/${tomcat.conf.dir.name}</additionalConfigFilesDir>
@@ -239,11 +239,9 @@
                     <dependencies>
                         <!-- Other dependencies -->
                         <dependency>
-                            <groupId>org.hsqldb</groupId>
-                            <artifactId>hsqldb</artifactId>
-                            <version>2.3.1</version>
-                            <type>jar</type>
-                            <scope>compile</scope>
+                           <groupId>mysql</groupId>
+                           <artifactId>mysql-connector-java</artifactId>
+                           <version>5.1.26</version>
                         </dependency>
                         <dependency>
                             <groupId>commons-dbcp</groupId>
