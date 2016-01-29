@@ -54,10 +54,10 @@
           logAbandoned="true"
           minEvictableIdleTimeMillis="30000"
           jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
-          username="${database.user}"
-          password="${database.password}"
-          driverClassName="${database.driver}"
-          url="${database.url}"/>
+          username="root"
+          password="root"
+          driverClassName="com.mysql.jdbc.Driver"
+          url="jdbc:mysql://mysqlteam1:3306/mysql?useUnicode=true&amp;characterEncoding=utf8"/>
 
     <Resource name="jdbc/storage"
               auth="Container"
@@ -76,10 +76,11 @@
               logAbandoned="true"
               minEvictableIdleTimeMillis="30000"
               jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
-              username="${database.user}"
-              password="${database.password}"
-              driverClassName="${database.driver}"
-              url="${database.url}"/>
+          username="root"
+          password="root"
+          driverClassName="com.mysql.jdbc.Driver"
+          url="jdbc:mysql://mysqlteam1:3306/mysql?useUnicode=true&amp;characterEncoding=utf8"/>
+
 
     <Resource name="jdbc/secure"
               auth="Container"
@@ -98,10 +99,11 @@
               logAbandoned="true"
               minEvictableIdleTimeMillis="30000"
               jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
-              username="${database.user}"
-              password="${database.password}"
-              driverClassName="${database.driver}"
-              url="${database.url}"/>
+          username="root"
+          password="root"
+          driverClassName="com.mysql.jdbc.Driver"
+          url="jdbc:mysql://mysqlteam1:3306/mysql?useUnicode=true&amp;characterEncoding=utf8"/>
+
 
     <Resource name="jdbc/event"
               auth="Container"
@@ -120,9 +122,9 @@
               logAbandoned="true"
               minEvictableIdleTimeMillis="30000"
               jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
-              username="${database.user}"
-              password="${database.password}"
-              driverClassName="${database.driver}"
-              url="${database.url}"/>
+          username="root"
+          password="root"
+          driverClassName="com.mysql.jdbc.Driver"
+          url="jdbc:mysql://mysqlteam1:3306/mysql?useUnicode=true&amp;characterEncoding=utf8"/>
 
 </Context>
